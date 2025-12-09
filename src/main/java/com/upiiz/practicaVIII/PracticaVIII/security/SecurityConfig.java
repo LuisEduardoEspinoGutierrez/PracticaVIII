@@ -71,7 +71,7 @@ public class SecurityConfig {
                 // -----------------------------------------
                 // Cualquier otro request necesita token
                 // -----------------------------------------
-                .anyRequest().authenticated()
+                .anyRequest().permitAll()
         );
 
         http.headers(headers -> headers.frameOptions(frame -> frame.disable()));
