@@ -42,7 +42,7 @@ public class SecurityConfig {
                 // ENDPOINTS PÚBLICOS (Login y Register)
                 // -----------------------------------------
                 .requestMatchers("/api/auth/**").permitAll()
-                .requestMatchers("/").permitAll()
+                .requestMatchers("/practicaviii-2.onrender.com").permitAll()
 
                 // -----------------------------------------
                 // GET públicos
