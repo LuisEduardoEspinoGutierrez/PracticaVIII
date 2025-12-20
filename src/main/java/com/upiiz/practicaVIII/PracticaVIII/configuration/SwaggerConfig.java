@@ -25,12 +25,14 @@ import org.springframework.context.annotation.Configuration;
                         url = "https://opensource.org/licenses/MIT"
                 )
         ),
+        /*
         servers = {
                 @Server(
                         url = "http://localhost:8080",
                         description = "Servidor local de desarrollo"
                 )
         },
+        */
         security = {
                 @SecurityRequirement(name = "bearerAuth")
         }
