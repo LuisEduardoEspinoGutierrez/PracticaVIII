@@ -61,6 +61,8 @@ public class SecurityConfig {
                         "/webjars/**").permitAll()
 
                 .requestMatchers("/h2-console/**").permitAll()
+                                   
+                .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
 
                 // -----------------------------------------
                 // POST protegidos por JWT
